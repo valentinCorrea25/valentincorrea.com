@@ -29,9 +29,7 @@ const formattedDate = post.data.date.toLocaleDateString('en-US', {
       <h1 class="post-title">{post.data.title}</h1>
       <time class="post-date" datetime={post.data.date.toISOString()}>{formattedDate}</time>
     </header>
-
     <TranslatorSelect contentSelector=".post-content" />
-    
     <div class="post-content">
       <Content />
     </div>
@@ -44,7 +42,7 @@ const formattedDate = post.data.date.toLocaleDateString('en-US', {
   }
 
   .post-header {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
     padding-bottom: var(--spacing-lg);
     border-bottom: var(--border);
   }

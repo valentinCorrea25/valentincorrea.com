@@ -2,8 +2,9 @@
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/blog', label: 'Blog' },
-  { href: '/books', label: 'Books' },
-  { href: '/games', label: 'Games' },
+  // { href: '/contact', label: 'Contact' }, 
+  // { href: '/books', label: 'Books' },
+  // { href: '/games', label: 'Games' },
 ];
 
 const currentPath = Astro.url.pathname;
@@ -11,7 +12,7 @@ const currentPath = Astro.url.pathname;
 
 <nav class="navbar">
   <div class="navbar-content">
-    <a href="/" class="navbar-logo">⌘</a>
+    <a href="/" class="navbar-logo"><img src="/favicon.svg"/></a>
     <ul class="navbar-links">
       {navItems.map((item) => (
         <li>
@@ -44,6 +45,8 @@ const currentPath = Astro.url.pathname;
   .navbar-logo {
     font-size: 1.5rem;
     text-decoration: none;
+    width: 2rem;
+    height: 2rem;
   }
 
   .navbar-links {

@@ -24,7 +24,7 @@ import siteData from '../data/site.json';
           {siteData.social.github && (
             <li>
               <span class="info-label">GitHub:</span>
-              <a href={siteData.social.github} target="_blank" rel="noopener noreferrer">@valentincorrea</a>
+              <a href={siteData.social.github} target="_blank" rel="noopener noreferrer">{siteData.social.github.split('/').pop()}</a>
             </li>
           )}
           {siteData.social.linkedin && (

@@ -8,7 +8,7 @@ date: 2026-01-01
 
 This portfolio is inspired by the aesthetic of the original Apple Macintosh from 1984. The design uses:
 
-- **Chicago Kare font**: A faithful reproduction of Susan Kare's original Chicago typeface.
+- **Chicago Kare font**: A faithful reproduction of Susan Kare's original Chicago typeface made by <a href='https://chicagokare.xyz/' target='_blank'>Duane King</a>.
 - **Black and white only**: No colors, just like the original Mac.
 - **Simple layouts**: Grid-based, functional design.
 

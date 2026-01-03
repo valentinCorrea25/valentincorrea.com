@@ -3,7 +3,7 @@ interface Props {
   formspreeId?: string;
 }
 
-const { formspreeId = 'YOUR_FORMSPREE_ID' } = Astro.props;
+const { formspreeId = 'mnjnbekb' } = Astro.props;
 ---
 
 <form 
@@ -27,7 +27,56 @@ const { formspreeId = 'YOUR_FORMSPREE_ID' } = Astro.props;
   </div>
 
   <button type="submit" class="submit-btn">Send Message →</button>
+  <p class="form-status"></p>
 </form>
+
+<script>
+  function initContactForm() {
+    const form = document.querySelector('.contact-form') as HTMLFormElement;
+    const status = document.querySelector('.form-status') as HTMLElement;
+    
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(form);
+      const action = form.action;
+      
+      status.textContent = 'Sending...';
+      status.className = 'form-status sending';
+      
+      try {
+        const response = await fetch(action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          form.reset();
+          status.textContent = '✓ Message sent successfully!';
+          status.className = 'form-status success';
+          setTimeout(() => {
+            status.textContent = '';
+            status.className = 'form-status';
+          }, 5000);
+        } else {
+          status.textContent = '✗ Error sending message. Please try again.';
+          status.className = 'form-status error';
+        }
+      } catch (error) {
+        status.textContent = '✗ Error sending message. Please try again.';
+        status.className = 'form-status error';
+      }
+    });
+  }
+
+  initContactForm();
+  document.addEventListener('astro:page-load', initContactForm);
+</script>
 
 <style>
   .contact-form {
@@ -74,6 +123,24 @@ const { formspreeId = 'YOUR_FORMSPREE_ID' } = Astro.props;
 
   .submit-btn:active {
     opacity: 0.7;
+  }
+
+  .form-status {
+    font-size: 0.875rem;
+    margin-top: var(--spacing-sm);
+    min-height: 1.25rem;
+  }
+
+  .form-status.sending {
+    opacity: 0.7;
+  }
+
+  .form-status.success {
+    color: #4ade80;
+  }
+
+  .form-status.error {
+    color: #f87171;
   }
 </style>
 
