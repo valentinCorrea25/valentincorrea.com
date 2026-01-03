@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogPostCard from '../../components/BlogPostCard.astro';
+import siteData from '../../data/site.json';
+
+const posts = await getCollection('blog', ({ data }) => {
+  return data.draft !== true;
+});
+
+const sortedPosts = posts.sort((a, b) => 
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<BaseLayout title={`Blog - ${siteData.name}`} description="Thoughts on software, technology, and more.">
+  <section class="blog-section">
+    <h1 class="page-title">Blog</h1>
+    <p class="page-description">Thoughts on software, technology, and other things.</p>
+    
+    <div class="posts-list">
+      {sortedPosts.map((post) => (
+        <BlogPostCard
+          title={post.data.title}
+          description={post.data.description}
+          date={post.data.date}
+          slug={post.id}
+        />
+      ))}
+    </div>
+
+    {sortedPosts.length === 0 && (
+      <p class="no-posts">No posts yet. Check back soon!</p>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+  .blog-section {
+    max-width: 700px;
+  }
+
+  .page-title {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-description {
+    opacity: 0.7;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .no-posts {
+    opacity: 0.5;
+    font-style: italic;
+  }
+</style>
+

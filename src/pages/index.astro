@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Grid from '../components/Grid.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import projects from '../data/projects.json';
+import siteData from '../data/site.json';
+---
+
+<BaseLayout title={`${siteData.name} - Portfolio`}>
+  <Hero />
+  
+  <section class="projects-section">
+    <h2 class="section-title">Projects</h2>
+    <Grid columns={4}>
+      {projects.map((project) => (
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          technologies={project.technologies}
+          url={project.url}
+          year={project.year}
+          image={project.image}
+        />
+      ))}
+    </Grid>
+  </section>
+</BaseLayout>
+
+<style>
+  .projects-section {
+    margin-top: var(--spacing-lg);
+  }
+
+  .section-title {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: var(--border);
+  }
+</style>

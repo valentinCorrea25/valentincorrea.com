@@ -1,0 +1,58 @@
+[
+  {
+    "id": "project-1",
+    "title": "Atom-Inc",
+    "description": "Atom inc (inner network communication) Connect devices on your local network instantly. Real-time chat and file transfer without complex configuration.",
+    "technologies": ["Electron", "TypeScript", "React"],
+    "url": "https://github.com/valentinCorrea25/atom-inc",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1767404859/atom-logo_qdejjh.png"
+  },
+  {
+    "id": "project-2",
+    "title": "Permutas Ya",
+    "description": "Exchage objects app based on users locations",
+    "technologies": ["React", "Supabase", "NextJs"],
+    "url": "https://permutasya.org",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1756349543/cf3e75db-1c3c-4e82-911b-21110f2dd121.png"
+  },
+  {
+    "id": "project-3",
+    "title": "Hoteche Uruguay",
+    "description": "complete e-commerce platform for a company",
+    "technologies": ["NextJs", "Supabase", "React"],
+    "url": "https://hotecheuruguay.com.uy",
+    "year": "2024",
+    "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1756349332/d4a2f6b9-a25b-4c07-be06-4a2c5fcf6339.png"
+  },
+  {
+    "id": "project-5",
+    "title": "Backpack",
+    "description": "a clipboard manager for macOS that stores, organizes, and quickly retrieves your copy history",
+    "technologies": ["C++"],
+    "url": "https://github.com/valentinCorrea25/backpack",
+    "year": "2023",
+    "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1767404745/ChatGPT_Image_Dec_27_2025_03_59_46_PM_1_auvu8p.png"
+  },
+  {
+    "id": "project-6",
+    "title": "Cardoon",
+    "description": "Flashcard generator based on text powered by AI",
+    "technologies": ["NextJs", "React", "Supabase"],
+    "url": "https://www.cardoon.app/",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1767404753/Screenshot_2026-01-02_at_10.44.29_PM_vqx2is.png"
+  },
+  {
+    "id": "project-4",
+    "title": "Tetris",
+    "description": "Classic Tetris built with vanilla JavaScript",
+    "technologies": ["Javascript", "CSS"],
+    "url": "https://github.com/valentinCorrea25/tetris",
+    "year": "2023",
+    "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1756349621/5d1eeecd-5718-4fd9-9372-39edc4c42f4a.png"
+  }
+  
+]
+

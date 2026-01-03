@@ -1,0 +1,127 @@
+---
+interface Props {
+  src: string;
+  alt?: string;
+  width?: number;
+  cols?: number;
+}
+
+const { src, alt = '', width = 300, cols = 60 } = Astro.props;
+---
+
+<div class="ascii-container" style={`max-width: ${width}px;`}>
+  <img 
+    src={src} 
+    alt={alt} 
+    class="ascii-source" 
+    crossorigin="anonymous"
+    data-cols={cols}
+  />
+  <pre class="ascii-output" aria-hidden="true"></pre>
+</div>
+
+<script>
+  const ASCII_CHARS = ' .:-=+*#%@';
+  
+  function imageToAscii(img: HTMLImageElement, cols: number): string {
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return '';
+
+    const aspectRatio = img.height / img.width;
+    const rows = Math.floor(cols * aspectRatio * 0.5);
+    
+    canvas.width = cols;
+    canvas.height = rows;
+    
+    ctx.drawImage(img, 0, 0, cols, rows);
+    
+    const imageData = ctx.getImageData(0, 0, cols, rows);
+    const pixels = imageData.data;
+    
+    let ascii = '';
+    
+    for (let y = 0; y < rows; y++) {
+      for (let x = 0; x < cols; x++) {
+        const idx = (y * cols + x) * 4;
+        const r = pixels[idx];
+        const g = pixels[idx + 1];
+        const b = pixels[idx + 2];
+        const brightness = (r + g + b) / 3;
+        const charIndex = Math.floor((brightness / 255) * (ASCII_CHARS.length - 1));
+        ascii += ASCII_CHARS[charIndex];
+      }
+      ascii += '\n';
+    }
+    
+    return ascii;
+  }
+
+  function initAsciiImages() {
+    const containers = document.querySelectorAll('.ascii-container');
+    
+    containers.forEach((container) => {
+      const img = container.querySelector('.ascii-source') as HTMLImageElement;
+      const output = container.querySelector('.ascii-output') as HTMLPreElement;
+      
+      if (!img || !output) return;
+      
+      const cols = parseInt(img.dataset.cols || '60');
+      
+      const processImage = () => {
+        const ascii = imageToAscii(img, cols);
+        output.textContent = ascii;
+        output.classList.add('loaded');
+      };
+      
+      if (img.complete) {
+        processImage();
+      } else {
+        img.addEventListener('load', processImage);
+      }
+    });
+  }
+
+  // Run on page load and after navigation
+  initAsciiImages();
+  document.addEventListener('astro:page-load', initAsciiImages);
+</script>
+
+<style>
+  .ascii-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .ascii-source {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+  }
+
+  .ascii-output {
+    font-family: var(--font-main);
+    font-size: 0.35rem;
+    line-height: 0.45rem;
+    letter-spacing: 0.1em;
+    white-space: pre;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    overflow: hidden;
+  }
+
+  .ascii-output.loaded {
+    opacity: 1;
+  }
+
+  @media (max-width: 600px) {
+    .ascii-output {
+      font-size: 0.25rem;
+      line-height: 0.35rem;
+    }
+  }
+</style>
+

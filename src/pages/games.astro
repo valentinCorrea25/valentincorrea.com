@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Grid from '../components/Grid.astro';
+import GameCard from '../components/GameCard.astro';
+import games from '../data/games.json';
+import siteData from '../data/site.json';
+---
+
+<BaseLayout title={`Game Recommendations - ${siteData.name}`} description="Games that I love and recommend.">
+  <section class="games-section">
+    <h1 class="page-title">Game Recommendations</h1>
+    <p class="page-description">Games that have captivated me with their design, storytelling, or gameplay.</p>
+    
+    <Grid columns={4}>
+      {games.map((game) => (
+        <GameCard
+          title={game.title}
+          platform={game.platform}
+          description={game.description}
+          url={game.url}
+          year={game.year}
+          cover={game.cover}
+        />
+      ))}
+    </Grid>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-title {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-description {
+    opacity: 0.7;
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+  }
+</style>
+

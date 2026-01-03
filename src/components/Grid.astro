@@ -1,0 +1,48 @@
+---
+interface Props {
+  columns?: 2 | 3 | 4;
+}
+
+const { columns = 4 } = Astro.props;
+---
+
+<div class="grid" data-columns={columns}>
+  <slot />
+</div>
+
+<style>
+  .grid {
+    display: grid;
+    gap: var(--spacing-lg);
+    width: 100%;
+    grid-auto-rows: 1fr;
+  }
+
+  .grid[data-columns="2"] {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid[data-columns="3"] {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid[data-columns="4"] {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    .grid[data-columns="4"],
+    .grid[data-columns="3"] {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .grid[data-columns="4"],
+    .grid[data-columns="3"],
+    .grid[data-columns="2"] {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+

@@ -1,0 +1,67 @@
+---
+const navItems = [
+  { href: '/', label: 'Home' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/books', label: 'Books' },
+  { href: '/games', label: 'Games' },
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="navbar">
+  <div class="navbar-content">
+    <a href="/" class="navbar-logo">⌘</a>
+    <ul class="navbar-links">
+      {navItems.map((item) => (
+        <li>
+          <a 
+            href={item.href} 
+            class:list={['navbar-link', { active: currentPath === item.href }]}
+          >
+            {item.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .navbar {
+    border-bottom: var(--border);
+    padding: var(--spacing-md);
+  }
+
+  .navbar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-lg);
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .navbar-link:hover,
+  .navbar-link.active {
+    opacity: 1;
+    text-decoration: underline;
+  }
+</style>
+

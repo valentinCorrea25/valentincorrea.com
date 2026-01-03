@@ -1,0 +1,39 @@
+[
+  {
+    "id": "book-1",
+    "title": "Meditaions",
+    "author": "Marco Aurelius",
+    "year": "181",
+    "description": "A life changer",
+    "url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1421618636i/30659.jpg",
+    "cover": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1421618636i/30659.jpg"
+  },
+  {
+    "id": "book-2",
+    "title": "The Pragmatic Programmer",
+    "author": "David Thomas & Andrew Hunt",
+    "year": "2019",
+    "description": "Your journey to mastery.",
+    "url": "https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/",
+    "cover": ""
+  },
+  {
+    "id": "book-3",
+    "title": "Designing Data-Intensive Applications",
+    "author": "Martin Kleppmann",
+    "year": "2017",
+    "description": "The big ideas behind reliable, scalable systems.",
+    "url": "https://dataintensive.net/",
+    "cover": ""
+  },
+  {
+    "id": "book-4",
+    "title": "Structure and Interpretation of Computer Programs",
+    "author": "Harold Abelson & Gerald Jay Sussman",
+    "year": "1996",
+    "description": "A classic computer science textbook.",
+    "url": "https://mitpress.mit.edu/sites/default/files/sicp/index.html",
+    "cover": ""
+  }
+]
+

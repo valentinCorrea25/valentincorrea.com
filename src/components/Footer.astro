@@ -1,0 +1,68 @@
+---
+import siteData from '../data/site.json';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      {siteData.social.github && (
+        <a href={siteData.social.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+      )}
+      {siteData.social.linkedin && (
+        <a href={siteData.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      )}
+      {siteData.social.twitter && (
+        <a href={siteData.social.twitter} target="_blank" rel="noopener noreferrer">Twitter</a>
+      )}
+      <a href="/contact">Contact</a>
+    </div>
+    <p class="footer-copyright">© {currentYear} {siteData.name}</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: var(--border);
+    padding: var(--spacing-lg) var(--spacing-md);
+    margin-top: auto;
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: var(--spacing-lg);
+  }
+
+  .footer-links a {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .footer-links a:hover {
+    opacity: 1;
+  }
+
+  .footer-copyright {
+    opacity: 0.5;
+    font-size: 0.875rem;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+</style>
+

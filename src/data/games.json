@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Red Dead Redeption 2",
+    "year": "2018",
+    "description": "Masterpiece, a complete experience",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+    "id": "game1"
+  },
+  {
+    "title": "Metal Gear Solid 3",
+    "year": "2004",
+    "description": "One of the best story ever made",
+    "cover": "https://i.redd.it/qofzj0ga1eyc1.jpeg",
+    "id": "game2"
+  },
+  {
+    "title": "Metal Gear Solid",
+    "year": "1998",
+    "description": "The best action-movie game, I really enjoy this one",
+    "cover": "https://cdn.mobygames.com/covers/4163264-metal-gear-solid-playstation-front-cover.jpg",
+    "id": "game3"
+  },
+  {
+    "title": "Silent Hill P.T",
+    "year": "2014",
+    "description": "A revolutionary game who truthly gives a scary experience",
+    "cover": "https://preview.redd.it/would-you-consider-p-t-a-silent-hill-game-v0-djig9bovo0rf1.jpeg?width=640&crop=smart&auto=webp&s=f3eb69774b19d73363f2ddcf02a093c078fb7b58",
+    "id": "game4"
+  },
+  {
+    "title": "Dark Souls",
+    "year": "2011",
+    "description": "This game is philosofical all the way. I cant explain why this is a game its so great, but it really is",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/8d/Dark_Souls_Cover_Art.jpg",
+    "id": "gamed"
+  },
+  {
+    "title": "Silent Hill 2",
+    "year": "2001",
+    "description": "Masterpiece of horror and story games",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/9/95/Silent_Hill_2.jpg",
+    "id": "game5"
+  },
+  {
+    "title": "Grim Fandango",
+    "year": "1998",
+    "description": "Masterpiece of Click and Point games, also, one of the best Spanish voice cast ever, really fun",
+    "cover": "https://m.media-amazon.com/images/M/MV5BZGYwMGZhYTgtMGQyYi00MWRiLWIxOTQtZDIzYTQzZmEzNGZmXkEyXkFqcGc@._V1_.jpg",
+    "id": "game6"
+  },
+  {
+    "title": "Mafia 2",
+    "year": "2010",
+    "description": "Love this years of history and mafia era",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJNcyRcu6hrSW8Q_N71ulhAMr8-Or2Qhf-Ng&s",
+    "id": "game7"
+  },
+  {
+    "title": "Mafia",
+    "year": "2001",
+    "description": "No matter whats year is, this game is still one of the best game of all time",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/MafiaUSCov.jpg/250px-MafiaUSCov.jpg",
+    "id": "game8"
+  },
+  {
+    "title": "The Last of Us Part II",
+    "year": "2020",
+    "description": "Great game, greate story and conclusion",
+    "cover": "https://cdn1.epicgames.com/offer/7713e3fa4b234e0d8f553044205d53b6/EGS_TheLastofUsPartIIRemastered_NaughtyDogLLCNixxesSoftwareIronGalaxy_S2_1200x1600-2e13755a6b3fec2ee9dbcc231a1cf39c",
+    "id": "game9"
+  },
+  {
+    "title": "Metal Gear Solid V: The Phantom Pain",
+    "year": "2015",
+    "description": "The most fun Metal Gear Solid, its a shame that cannot be completed, but technically, this game its one of the best games ever made",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkPjj7PlWkL3SRgDdMqeJgr-91js1KW9JRrQ&s",
+    "id": "game10"
+  },
+  {
+    "title": "Door Door",
+    "year": "1987",
+    "description": "What can i say, try it out",
+    "cover": "https://i.ytimg.com/vi/aYXHkBNoCUQ/sddefault.jpg",
+    "id": "game11"
+  },
+  {
+    "title": "Metal Gear",
+    "year": "1987",
+    "description": "Great experience, sick cover",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoio573ogSbqVd6ErOdeRnDEAmCwUYbFRaFw&s",
+    "id": "game12"
+  },
+  {
+    "title": "Manhunt",
+    "year": "2003",
+    "description": "Brutal game, really fun and challenging, unique in its genre",
+    "cover": "https://cdn.mobygames.com/covers/4087382-manhunt-playstation-2-front-cover.jpg",
+    "id": "game13"
+  },
+  {
+    "title": "Bully",
+    "year": "2006",
+    "description": "I really play this game over and over when I was a kid, I didnt have a memory card so I remember clearly the firsts dialogs by heart",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-TQqvVbAbQ_YC3tS3UV88mQJGtY3lbNJ5pA&s",
+    "id": "game14"
+  },
+  {
+    "title": "TimeSplitters 2",
+    "year": "2002",
+    "description": "Many hours spend when I was a kid on this one. The story its coop so try it with someone, its really worth it",
+    "cover": "https://m.media-amazon.com/images/I/615jYNYqi7L._AC_UF1000,1000_QL80_.jpg",
+    "id": "game15"
+  },
+  {
+    "title": "The Godfather",
+    "year": "2005",
+    "description": "Il capo mafia",
+    "cover": "https://m.media-amazon.com/images/I/41W+AYouGYL._AC_UF894,1000_QL80_.jpg",
+    "id": "game16"
+  },
+  {
+    "title": "Def Jam: Fight for NY",
+    "year": "2004",
+    "description": "The best fighting game ever made.",
+    "cover": "https://m.media-amazon.com/images/M/MV5BMjliMGFhOTctNGFiOC00NjA0LTk0NzctYzQyMjhlMTg4OWQ1XkEyXkFqcGc@._V1_.jpg",
+    "id": "game17"
+  },
+  {
+    "title": "Far Cry 3: Blood Dragon",
+    "year": "2013",
+    "description": "Short, greate, fun, distopic, crazy. No more comments",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/6/67/FC3_Blood_Dragon_Cover.jpg",
+    "id": "game18"
+  },
+  {
+    "title": "Resident Evil 4",
+    "year": "2004",
+    "description": "Like Intelestellar, this game is one of the best horror games, but only half of the game, the rest its really disappointing",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/d/d9/Resi4-gc-cover.jpg",
+    "id": "game19"
+  },
+  {
+    "title": "Death Stranding",
+    "year": "2019",
+    "description": "Peaceful and working game, really, its a working game, I dont know how much time I spend making roads for everyone",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMnOTvnTqOHSaCcQHV3IDiM2XTXd9MTpOzLg&s",
+    "id": "game20"
+  },
+  {
+    "title": "Alien: Isolation",
+    "year": "2014",
+    "description": "Just try it, really fun",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/6/6e/Alien_Isolation.jpg",
+    "id": "game21"
+  },
+  {
+    "title": "Outlast",
+    "year": "2013",
+    "description": "One of my weakness, the best game of horror of all time, from start to finish, the true horror",
+    "cover": "https://cdn1.epicgames.com/offer/78f42129096d4233bccc527733debfbd/EGS_Outlast_RedBarrels_S2_1200x1600-b02ebdfb4bcd3b1d608ab5b87257b3c4",
+    "id": "game22"
+  },
+  {
+    "title": "Puzzle Bobble",
+    "year": "1994",
+    "description": "My favorite in the saga",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-0m8xP_Z9y2DDKBT_ruYGTdIVOGyo8rkkwg&s",
+    "id": "game23"
+  },
+  {
+    "title": "The Evil Within",
+    "year": "2014",
+    "description": "Like Intelestellar, this game is one of the best horror games, but only half of the game, the rest its really disappointing",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/5/56/The_Evil_Within_boxart.jpg",
+    "id": "game24"
+  },
+  {
+    "title": "The Walking Dead: The Final Season",
+    "year": "2018",
+    "description": "This final part mean a lot back on the day.",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/0/0e/The_Walking_Dead_The_Final_Season_cover.jpg",
+    "id": "game25"
+  },
+  {
+    "title": "12 Minutes",
+    "year": "2021",
+    "description": "Unique",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDIPVsk9-eWrGQ8ykzUOjz0yQX67Sm_NOoKA&s",
+    "id": "game26"
+  },
+  {
+    "title": "Factorio",
+    "year": "lifetime",
+    "description": "like heroin but for the eyes",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAKxclGgfk7GAN6daI5qyg4_-KpBWmro560A&s",
+    "id": "game27"
+  },
+  {
+    "title": "Resident Evil 7: Biohazard",
+    "year": "2017",
+    "description": "The beginning its GREAT, the rest, not, but worth starting",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVBraKvqxjoMozIEtqAwMY8KBsQwdFUixKEA&s",
+    "id": "game28"
+  },
+  {
+    "title": "Condemned: Criminal Origins",
+    "year": "2005",
+    "description": "Another weakness, so scary",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7SeFClswvN5AzqRQ_S7hRTVEEx5KQ2rwiM3uLXlLAWNo9k-R0oIyLCfcZkA71SrjywfZHxw&s=10",
+    "id": "game29"
+  },
+  {
+    "title": "Silent Hill 3",
+    "year": "2003",
+    "description": "Great experience",
+    "cover": "https://m.media-amazon.com/images/M/MV5BYjFmNDkwMTYtZTJhMy00ZjQ1LTg5ODUtNjcwYWY5OTA2ZWEwXkEyXkFqcGc@._V1_.jpg",
+    "id": "game30"
+  },
+  {
+    "title": "Final Fantasy VII",
+    "year": "1997",
+    "description": "didnt like this kind of games until I play this",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/c/c2/Final_Fantasy_VII_Box_Art.jpg",
+    "id": "game31"
+  },
+  {
+    "title": "Hitman: Blood Money",
+    "year": "2006",
+    "description": "Best Hitman ever, no more comments",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIQ-4-Jzbu1L9TMb03A8Jm5Y0ai0LW3TZhg&s",
+    "id": "game32"
+  },
+  {
+    "title": "Middle-earth: Shadow of War",
+    "year": "2017",
+    "description": "I love the nemesis system",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/8/8f/MiddleEarthShadowOfWar.jpg",
+    "id": "game33"
+  },
+  {
+    "title": "Sekiro: Shadows Die Twice",
+    "year": "2019",
+    "description": "Nice",
+    "cover": "https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg",
+    "id": "game34"
+  },
+  {
+    "title": "Need for Speed: Underground 2",
+    "year": "2004",
+    "description": "Best NFS",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuQGwhKwVj8vSRyh8LhwLICIsBZXSnuq2Cug&s",
+    "id": "game35"
+  },
+  {
+    "title": "Black Ops 1",
+    "year": "2010",
+    "description": "Love could war era, and this one and the zombies nail it",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDfRpgZ97TXC-qvHxaMVJSjqPV7HiIlGUTKA&s",
+    "id": "game36"
+  },
+  {
+    "title": "Age of Empires II: Definitive Edition",
+    "year": "2002",
+    "description": "WOLOLOO",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7nsVcJVY6g3CPQXLV1444XRGSfTKr9kzAzg&s",
+    "id": "game37"
+  },
+  {
+    "title": "South Park: The Stick of Truth",
+    "year": "2014",
+    "description": "What can i say",
+    "cover": "https://cdn1.epicgames.com/8f8bddb3ff464536984ce8e945cb5f8c/offer/SPRK_Store_Portrait_1200x1600-1200x1600-2207f4307a22a4fc55bd08ee807c674d.jpg",
+    "id": "game38"
+  },
+  {
+    "title": "Metro 2033",
+    "year": "2010",
+    "description": "Really love this one, grapics, gameplay, presentation. A must play",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPC1ZeYsBt-d9L_H14LGRiQQj3WAavlrWu2g&s",
+    "id": "game39"
+  },
+  {
+    "title": "Call of Cthulhu: Dark Corners of the Earth",
+    "year": "2006",
+    "description": "Really scary beginning, the rest, not much",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLWmFOkeOKelg56wF3KIIar0xFt5QH5omdIQ&s",
+    "id": "game40"
+  },
+  {
+    "title": "Vampire: The Masquerade – Bloodlines",
+    "year": "2004",
+    "description": "Like a Fallout game, with a great envirorment and nice gamplay",
+    "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwB62wv3FYT_ji-bDbHJXvaAYNMxnaV3QbHA&s",
+    "id": "game47"
+  },
+  {
+    "title": "The long Drive",
+    "year": "2021",
+    "description": "An enjoyable alone expirence",
+    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1017180/capsule_616x353.jpg?t=1751568928",
+    "id": "game48"
+  }
+]

@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Grid from '../components/Grid.astro';
+import BookCard from '../components/BookCard.astro';
+import books from '../data/books.json';
+import siteData from '../data/site.json';
+---
+
+<BaseLayout title={`Book Recommendations - ${siteData.name}`} description="Books that have shaped my thinking.">
+  <section class="books-section">
+    <h1 class="page-title">Book Recommendations</h1>
+    <p class="page-description">Books that have influenced my thinking and shaped how I approach software development.</p>
+    
+    <Grid columns={4}>
+      {books.map((book) => (
+        <BookCard
+          title={book.title}
+          author={book.author}
+          description={book.description}
+          url={book.url}
+          year={book.year}
+          cover={book.cover}
+        />
+      ))}
+    </Grid>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-title {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .page-description {
+    opacity: 0.7;
+    margin-bottom: var(--spacing-xl);
+    max-width: 600px;
+  }
+</style>
+
