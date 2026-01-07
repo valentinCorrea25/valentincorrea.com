@@ -32,7 +32,7 @@
     "description": "a clipboard manager for macOS that stores, organizes, and quickly retrieves your copy history",
     "technologies": ["C++"],
     "url": "https://github.com/valentinCorrea25/backpack",
-    "year": "2023",
+    "year": "2025",
     "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1767459448/valentincorrea.com/ChatGPT_Image_Jan_3_2026_01_55_37_PM_p5xuou.png"
   },
   {
@@ -50,8 +50,17 @@
     "description": "Classic Tetris built with vanilla JavaScript",
     "technologies": ["Javascript", "CSS"],
     "url": "https://github.com/valentinCorrea25/tetris",
-    "year": "2023",
+    "year": "2024",
     "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1767460223/valentincorrea.com/ChatGPT_Image_Jan_3_2026_02_09_56_PM_w0aj9e.png"
+  },
+  {
+    "id": "project-4",
+    "title": "Villa Serrana Community Web Page",
+    "description": "Make to promote the turism on Villa Serrana, providing useful informatiom and giving them the posibility to create posts",
+    "technologies": ["Javascript", "CSS"],
+    "url": "https://github.com/valentinCorrea25/tetris",
+    "year": "2024",
+    "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1767823958/valentincorrea.com/ChatGPT_Image_Jan_7_2026_07_12_14_PM_ytpxzb.png"
   }
   
 ]
