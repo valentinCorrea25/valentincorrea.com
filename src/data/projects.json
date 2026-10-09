@@ -2,6 +2,7 @@
   {
     "id": "project-servity",
     "title": "Servity",
+    "url": "https://servity.app",
     "description": "Restaurant, Coffee, FoodTruck, Ghost Kitchen POS / Ecommerce system",
     "technologies": ["NextJs", "React", "Supabase"],
     "year": "2026",
@@ -61,6 +62,5 @@
     "year": "2024",
     "image": "https://res.cloudinary.com/dvzf7szuo/image/upload/v1767823958/valentincorrea.com/ChatGPT_Image_Jan_7_2026_07_12_14_PM_ytpxzb.png"
   }
-  
-]
 
+]
