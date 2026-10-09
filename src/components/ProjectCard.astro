@@ -13,30 +13,36 @@ const { title, description, technologies, url, year, image } = Astro.props;
 
 <article class="project-card">
   <div class="project-image">
-    {image ? (
-      <img src={image} alt={title} loading="lazy" />
-    ) : (
-      <div class="project-placeholder">
-        <span class="placeholder-icon">▢</span>
-      </div>
-    )}
+    {
+      image ? (
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <img src={image} alt={title} loading="lazy" />
+        </a>
+      ) : (
+        <div class="project-placeholder">
+          <span class="placeholder-icon">▢</span>
+        </div>
+      )
+    }
   </div>
   <div class="project-body">
     <header class="project-header">
       <h3 class="project-title">
-        {url ? (
-          <a href={url} target="_blank" rel="noopener noreferrer">{title}</a>
-        ) : (
-          title
-        )}
+        {
+          url ? (
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+          ) : (
+            title
+          )
+        }
       </h3>
       {year && <span class="project-year">{year}</span>}
     </header>
     <p class="project-description">{description}</p>
     <div class="project-tech">
-      {technologies.map((tech) => (
-        <span class="tech-tag">{tech}</span>
-      ))}
+      {technologies.map((tech) => <span class="tech-tag">{tech}</span>)}
     </div>
   </div>
 </article>

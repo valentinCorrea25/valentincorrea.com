@@ -25,6 +25,7 @@
 
 html {
   font-size: 16px;
+  cursor: url('/images/cursor/cursor-32.png') 0 0, auto;
 }
 
 body {
@@ -33,6 +34,23 @@ body {
   color: var(--text);
   line-height: 1.4;
   min-height: 100vh;
+  cursor: url('/images/cursor/cursor-32.png') 0 0, auto;
+}
+
+a, button, select, label {
+  cursor: url('/images/cursor/handClick-32.png') 8 0, pointer;
+}
+
+input, textarea {
+  cursor: url('/images/cursor/hoverText-32.png') 16 16, text;
+}
+
+input[type="text"], input[type="email"], input:not([type]), textarea {
+  cursor: url('/images/cursor/hoverText-32.png') 16 16, text;
+}
+
+p:hover, h1:hover, h2:hover, h3:hover, h4:hover, li:hover {
+  cursor: url('/images/cursor/hoverText-32.png') 16 16, text;
 }
 
 a {
@@ -86,7 +104,7 @@ input:focus, textarea:focus {
 }
 
 button {
-  cursor: pointer;
+  cursor: url('/images/cursor/handClick-32.png') 8 0, pointer;
   transition: opacity 0.2s;
 }
 
